@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan 23 13:21:39 2024
+# Process ID: 18732
+# Current directory: D:/228491/PUL/MGR/project_12/project_12.runs/synth_1
+# Command line: vivado.exe -log main_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_wrapper.tcl
+# Log file: D:/228491/PUL/MGR/project_12/project_12.runs/synth_1/main_wrapper.vds
+# Journal file: D:/228491/PUL/MGR/project_12/project_12.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main_wrapper.tcl -notrace

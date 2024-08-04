@@ -1,0 +1,90 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jan 22 09:56:11 2024
+| Host         : p301-20 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_wrapper_control_sets_placed.rpt
+| Design       : main_wrapper
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    12 |
+|    Minimum number of control sets                        |    12 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    13 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    12 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     7 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              24 |            6 |
+| No           | No                    | Yes                    |               3 |            3 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              59 |           40 |
+| Yes          | No                    | Yes                    |              13 |           10 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+------------------+------------------+----------------+--------------+
+|                                                                        Clock Signal                                                                       |              Enable Signal              | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+------------------+------------------+----------------+--------------+
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] |                                         | btnC_IBUF        |                3 |              3 |         1.00 |
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] | main_i/UC_0/U0/state                    | btnC_IBUF        |                2 |              5 |         2.50 |
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] | main_i/UC_0/U0/IOADR[7]_i_1_n_0         | btnC_IBUF        |                8 |              8 |         1.00 |
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] | main_i/UC_0/U0/R[0][7]_i_1_n_0          |                  |                7 |              8 |         1.14 |
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] | main_i/UC_0/U0/R_reg[4]0                |                  |                5 |              8 |         1.60 |
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] | main_i/UC_0/U0/R_reg[3]0                |                  |                6 |              8 |         1.33 |
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] | main_i/UC_0/U0/R_reg[2]0                |                  |                7 |              8 |         1.14 |
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] | main_i/UC_0/U0/R_reg[1]0                |                  |                6 |              8 |         1.33 |
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] | main_i/UC_0/U0/R_reg[6]0                |                  |                7 |              8 |         1.14 |
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] | main_i/UC_0/U0/IR0                      |                  |                2 |             11 |         5.50 |
+|  clk_IBUF                                                                                                                                                 |                                         |                  |                6 |             24 |         4.00 |
+|  main_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q_BUFG[23] | main_i/UC_0/U0/RAM_reg_0_31_0_1_i_1_n_0 |                  |                4 |             32 |         8.00 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+------------------+------------------+----------------+--------------+
+
+

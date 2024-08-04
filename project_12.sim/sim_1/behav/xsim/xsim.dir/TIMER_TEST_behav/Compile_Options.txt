@@ -1,0 +1,1 @@
+-wto "a441bc69e48b4e488cf2fd84149cf499" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "TIMER_TEST_behav" "xil_defaultlib.TIMER_TEST" -log "elaborate.log" 
